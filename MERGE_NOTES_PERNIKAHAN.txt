@@ -1,0 +1,27 @@
+KERajaan 1066 - CATATAN PENGGABUNGAN PATCH PERNIKAHAN
+
+Patch yang diberikan: Kerajaan1066_patch_pernikahan.zip
+Isi patch: assets/public/assets/index-BvAG2olr.js (bundle JavaScript hasil build)
+
+HASIL PEMERIKSAAN
+Fitur inti pada bundle patch sudah ada pada source project APK di:
+src/engine/gameEngine.ts
+
+Bagian yang cocok:
+- Autonomous Logical Marriage
+- Prioritas penguasa yang belum memiliki ahli waris
+- Seleksi NPC lajang/janda/duda yang memenuhi batas usia
+- Pengecekan profesi selibat
+- Pembatasan hubungan darah dekat
+- Penyesuaian hubungan dinasti
+- Riwayat pernikahan kedua karakter
+- Catatan kronik pernikahan bangsawan tingkat tinggi
+
+Karena kode tersebut sudah ada pada source TypeScript project, bundle JavaScript hasil build
+TIDAK ditambahkan sebagai script kedua. Memuat bundle itu bersamaan dengan aplikasi utama
+berisiko menjalankan dua salinan aplikasi dan menyebabkan konflik state/penyimpanan.
+
+Dengan demikian, source APK project ini sudah memuat implementasi fitur pernikahan yang
+terdapat pada patch. File patch asli tidak diperlukan saat build APK.
+
+Catatan: paket ini adalah source project untuk dibuild menjadi APK, bukan file APK siap instal.

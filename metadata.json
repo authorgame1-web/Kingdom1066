@@ -1,0 +1,6 @@
+{
+  "name": "Kerajaan 1066",
+  "description": "Simulasi strategi dinasti, diplomasi, perang sejarah, dan kehidupan bangsawan abad pertengahan (1066–1600).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
